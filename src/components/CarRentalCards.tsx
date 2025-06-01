@@ -236,7 +236,7 @@ const CarRentalCards = ({
                   {"★".repeat(Math.round(car.rating))}
                   {"☆".repeat(5 - Math.round(car.rating))}
                 </div>
-                <img src={car.image} alt={car.model} className="car-image" />
+                <img src={car.image} alt={car.model} className="car-image" loading="lazy"/>
               </div>
               <div className="car-details">
                 <p className="car-group">{car.group}</p>
